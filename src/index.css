@@ -1,0 +1,38 @@
+
+
+h1{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+
+.card{
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card.down{
+    background-color: #161646;
+}
+.card.up{
+    background-color: #24d17a;
+}
+.card.selected{
+    background-color: #e45353;
+}
